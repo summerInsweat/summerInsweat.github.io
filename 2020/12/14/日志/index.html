@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql, YYL">
+    <meta name="keywords" content="Android, YYL">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>mysql | YYL</title>
+    <title>Android | YYL</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">mysql</h1>
+                    <h1 class="description center-align post-title">Android</h1>
                 </div>
             </div>
         </div>
@@ -442,7 +442,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-11-24
+                    2020-12-14
                 </div>
                 
 
@@ -458,43 +458,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h1 id="创建表单"><a href="#创建表单" class="headerlink" title="创建表单"></a>创建表单</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create table Person(</span><br><span class="line">    id int,</span><br><span class="line">    name char(20),</span><br><span class="line">    age int,</span><br><span class="line">    salary int);</span><br></pre></td></tr></table></figure>
-
-<h1 id="添加数据"><a href="#添加数据" class="headerlink" title="添加数据"></a>添加数据</h1><ul>
-<li>第一种</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> Person </span><br><span class="line">    <span class="keyword">values</span>( <span class="number">1</span>,<span class="string">&#x27;xiaoyang&#x27;</span>,<span class="number">20</span>,<span class="number">10000</span>);</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>第二种</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">insert into Person(id,name,age,salary)</span><br><span class="line">values(2,&#39;xiaocheng&#39;,20,10000)</span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h1><h2 id="排序索引order-by"><a href="#排序索引order-by" class="headerlink" title="排序索引order by"></a>排序索引order by</h2><ul>
-<li>升序排列</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select salary </span><br><span class="line">from</span><br><span class="line">person</span><br><span class="line">order by</span><br><span class="line">salary;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>降序排列</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select salary </span><br><span class="line">from</span><br><span class="line">person</span><br><span class="line">order by</span><br><span class="line">salary desc;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>规定返回行数    limit</li>
-</ul>
-<h2 id="过滤数据where"><a href="#过滤数据where" class="headerlink" title="过滤数据where"></a>过滤数据where</h2><ul>
-<li><pre><code>select salary from person where salary =10000;
-&lt;!--hexoPostRenderEscape:&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;![epub_22806965_102](https:&amp;#x2F;&amp;#x2F;res.weread.qq.com&amp;#x2F;wrepub&amp;#x2F;epub_22806965_102)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 范围值检查&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;:hexoPostRenderEscape--&gt;
-select salary from person where salary between 10000 and 10001;</code></pre>
-</li>
-<li><p>空值检查</p>
-</li>
-</ul>
-
+                <h2 id="四大组件之活动-Activity"><a href="#四大组件之活动-Activity" class="headerlink" title="四大组件之活动(Activity)"></a>四大组件之活动(Activity)</h2><h2 id="提醒方法Toast"><a href="#提醒方法Toast" class="headerlink" title="提醒方法Toast"></a>提醒方法Toast</h2>
             </div>
             <hr/>
 
@@ -519,7 +483,7 @@ select salary from person where salary between 10000 and 10001;</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://summerinsweat.github.io/2020/11/24/mysql/">https://summerinsweat.github.io/2020/11/24/mysql/</a>
+                    <a href="https://summerinsweat.github.io/2020/12/14/%E6%97%A5%E5%BF%97/">https://summerinsweat.github.io/2020/12/14/%E6%97%A5%E5%BF%97/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -726,24 +690,28 @@ select salary from person where salary between 10000 and 10001;</code></pre>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/12/13/test/">
+                <a href="/2020/12/14/%E6%B4%BB%E5%8A%A8/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="test">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="活动">
                         
-                        <span class="card-title">test</span>
+                        <span class="card-title">活动</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            活动的基本用法1手动创建活动1、创建和加载布局
+2、主配置添加主活动
+2使用Toast提醒Toast.makeText(Content,”字符串”,时长).show()
+3创建菜单步骤:1、创建菜单文件item
+​        2、重写 
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-13
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-14
                         </span>
                         <span class="publish-author">
                             
